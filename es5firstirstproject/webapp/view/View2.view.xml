@@ -1,0 +1,56 @@
+<mvc:View controllerName="app.es5firstirstproject.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="View2" title="{i18n>title}">
+        <content>
+            <!-- <ComboBox items="{/BusinessPartnerSet}" selectionChange="onSelectItem">
+                <items>
+                    <core:Item key="{BusinessPartnerID}" text="{BusinessPartnerID}"></core:Item>
+                </items>
+            </ComboBox> -->
+            <Label text="Sales Order ID: {salesOrderId}" id="idLabel"></Label>
+ 
+            <Table items="{SalesOrderModel>/}">
+                <columns>
+            
+                <Column>
+                    <Text text="{i18n>SOID}"></Text>
+                </Column>
+ 
+                <Column>
+                    <Text text="{i18n>CusName}"></Text>
+                </Column>
+ 
+                <Column>
+                    <Text text="{i18n>CurrCode}"></Text>
+                </Column>
+ 
+                <Column>
+                    <Text text="{i18n>GrossAmt}"></Text>
+                </Column>
+ 
+                <Column>
+                    <Text text="{i18n>TaxAmt}"></Text>
+                </Column>
+                   
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                           
+                            <Text text="{SalesOrderModel>CustomerID}"></Text>
+                            <Text text="{SalesOrderModel>CustomerName}"></Text>
+                            <Text text="{SalesOrderModel>CurrencyCode}"></Text>
+                            <Text text="{SalesOrderModel>GrossAmount}"></Text>
+                            <Text text="{SalesOrderModel>TaxAmount}"></Text>
+ 
+                        </cells>
+                    </ColumnListItem>  
+                </items>
+               
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
+ 

@@ -1,0 +1,24 @@
+<mvc:View controllerName="app.flightdetailssprint.controller.CreateView"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="idCreatePage" title="{i18n>titleCreate}">
+           <content>
+           <f:SimpleForm editable="true">
+           <Label text="Airline Number"></Label>
+           <Input id="idCarrid"></Input>
+           <Label text="Connection ID"></Label>
+           <Input id="idConnid"></Input>
+           <Label text="Flight Date"></Label>
+           <Input id="idFldate" placeholder="yyyy-MM-dd"></Input>
+           <Label text="Booking ID"></Label>
+           <Input id="idBookid"></Input>
+           <Label text="Order Date" ></Label>
+           <Input id="idOrderdate" type="Date"></Input>
+           <Button text="{i18n>Create}" press="onCreate"></Button>           
+           
+           
+           </f:SimpleForm>
+             </content>
+    </Page>
+</mvc:View>

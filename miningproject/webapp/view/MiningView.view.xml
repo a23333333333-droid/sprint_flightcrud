@@ -1,0 +1,39 @@
+<mvc:View controllerName="app.miningproject.controller.MiningView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page title="Mining View">
+        <headerContent>
+            <Button icon="sap-icon://action" tooltip="Share" press="onDetailView"/>
+            <Button icon="sap-icon://sort" press="onSort"/>
+        </headerContent>
+        <subHeader>
+            <OverflowToolbar>
+                <SearchField search="onSearch" liveChange="onSearch"/>
+            </OverflowToolbar>
+        </subHeader>
+        <content>
+            <List items="{MiningModel>/MiningDataSet}" id="idListCtrl" mode="SingleSelectMaster" selectionChange="onItemSelect">
+                <items>
+                    <ObjectListItem title="{MiningModel>Location Description}" number="{MiningModel>Location ID}" numberState="Success">
+                        <attributes>
+                            <ObjectAttribute text="{MiningModel>Mining Resource allocated}" title="Resource Allocated"/>
+                            <ObjectAttribute text="{MiningModel>Total cost}" title="Total Cost"/>
+                        </attributes>
+                        <firstStatus>
+                            <ObjectStatus text="{MiningModel>Probability of positive outcome}" title="Probability of Positive Outcome" state="{= ${MiningModel>Probability of positive outcome}==='High' ? 'Success' : ${MiningModel>Probability of positive outcome}==='Medium' ? 'Warning' : 'Error'}"/>
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer/>
+                <Button text="Accept" type="Accept"/>
+                <Button text="Reject" type="Reject"/>
+                <Button text="Edit"/>
+                <Button text="Delete"/>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

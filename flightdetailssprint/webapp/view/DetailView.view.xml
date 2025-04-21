@@ -1,0 +1,24 @@
+<mvc:View controllerName="app.flightdetailssprint.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="idDetailPage" title="{i18n>titleDetail}">
+           <content>
+           <f:SimpleForm editable="true">
+           <Label text="Airline Number"></Label>
+           <Text text="{FlightModel>Carrid}"></Text>
+           <Label text="Connection ID"></Label>
+           <Text text="{FlightModel>Connid}"></Text>
+           <Label text="Flight Date"></Label>
+           <Text text="{FlightModel>Fldate}"></Text>
+           <Label text="Booking ID"></Label>
+           <Text text="{FlightModel>Bookid}"></Text>
+           <Label text="Order Date" ></Label>
+           <Text text="{FlightModel>OrderDate}"></Text>
+           <Button text="{i18n>Edit}" press="onEdit"></Button>           
+           
+           
+           </f:SimpleForm>
+             </content>
+    </Page>
+</mvc:View>

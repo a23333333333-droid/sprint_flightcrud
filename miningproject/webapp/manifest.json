@@ -1,7 +1,7 @@
 {
-  "_version": "1.28.0",
+  "_version": "1.65.0",
   "sap.app": {
-    "id": "app.es5firstirstproject",
+    "id": "app.miningproject",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,27 +12,15 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
-      "version": "1.17.1",
-      "toolsId": "60595113-74a8-4eec-8ec1-35ec9da411f1"
-    },
-    "dataSources": {
-      "mainService": {
-        "uri": "/sap/opu/odata/iwbep/GWSAMPLE_BASIC/",
-        "type": "OData",
-        "settings": {
-          "annotations": [],
-          "localUri": "localService/mainService/metadata.xml",
-          "odataVersion": "2.0"
-        }
-      }
+      "version": "1.17.3",
+      "toolsId": "c2c9c650-ac89-4fc2-a1a9-9797bbfaabed"
     },
     "crossNavigation": {
       "inbounds": {
-        "customers-manage": {
-          "semanticObject": "customers",
+        "MiningDetails-manage": {
+          "semanticObject": "MiningDetails",
           "action": "manage",
-          "title": "{{customers-manage.flpTitle}}",
-          "subTitle": "{{customers-manage.flpSubtitle}}",
+          "title": "{{MiningDetails-manage.flpTitle}}",
           "signature": {
             "parameters": {},
             "additionalParameters": "allowed"
@@ -60,7 +48,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.84.14",
+      "minUI5Version": "1.134.1",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {}
@@ -74,13 +62,12 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "app.es5firstirstproject.i18n.i18n"
+          "bundleName": "app.miningproject.i18n.i18n"
         }
       },
-      "": {
-        "dataSource": "mainService",
-        "preload": true,
-        "settings": {}
+      "MiningModel":{
+        "type":"sap.ui.model.json.JSONModel",
+        "uri":"model/mockData/MiningData.json"
       }
     },
     "resources": {
@@ -93,53 +80,61 @@
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",
-        "viewType": "XML",
-        "async": true,
-        "viewPath": "app.es5firstirstproject.view",
         "controlAggregation": "pages",
         "controlId": "app",
-        "clearControlAggregation": false
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "app.miningproject.view",
+        "async": true,
+        "viewPath": "app.miningproject.view"
       },
       "routes": [
         {
-          "name": "RouteView1",
+          "name": "RouteMiningView",
           "pattern": "",
           "target": [
-            "TargetView1"
+            "TargetMiningView","TargetEmpty"
           ]
         },{
-          "name": "RouteView2",
-          "pattern": "RouteView2/{index}",
+          "name": "RouteDetail",
+          "pattern": "View2/{index}",
           "target": [
-            "TargetView2"
+            "TargetDetail"
           ]
         }
       ],
       "targets": {
-        "TargetView1": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "View1",
-          "viewName": "View1"
-        },"TargetView2": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "View2",
-          "viewName": "View2"
+        "TargetMiningView": {
+          "id": "MiningView",
+          "name": "MiningView",
+          "controlAggregation": "masterPages",
+          "viewLevel": 1
+        },
+        "TargetDetail":{
+          "id": "idDetail",
+          "name": "DetailView",
+          "controlAggregation": "detailPages",
+          "viewLevel":2
+
+          },
+          "TargetEmpty":{
+            "id":"idEmpty",
+            "name": "Empty",
+            "controlAggregation": "detailPages",
+            "viewLevel":1
+          }
       }
-    }
     },
     "rootView": {
-      "viewName": "app.es5firstirstproject.view.App",
+      "viewName": "app.miningproject.view.App",
       "type": "XML",
-      "async": true,
-      "id": "App"
+      "id": "App",
+      "async": true
     }
   },
   "sap.cloud": {
     "public": true,
-    "service": "appes5firstirstproject"
+    "service": "appminingproject"
   }
 }

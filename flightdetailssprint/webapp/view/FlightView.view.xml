@@ -1,0 +1,66 @@
+<mvc:View controllerName="app.flightdetailssprint.controller.FlightView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:comp="sap.ui.comp.filterbar">
+    <Page id="page" title="{i18n>title}">
+        <content/>
+            
+            <comp:FilterBar>
+                <comp:filterItems>
+                    <comp:FilterItem name="Carrid" label="Airline Name">
+                        <comp:control>
+                            
+                            <Input id="idCarrid2" placeholder="Enter Airline Name" liveChange="onSearch" ></Input>
+                        </comp:control>
+                    </comp:FilterItem>
+                    <comp:FilterItem name="Bookid" label="Filter Book ID">
+                        <comp:control>
+                            
+                            <Input id="idBookid2" placeholder="Enter Book ID" liveChange="onSearch"></Input>
+                        </comp:control>
+                    </comp:FilterItem>
+                </comp:filterItems>
+            </comp:FilterBar>
+            <Table items="{FlightModel>/}" id="idTab" mode="SingleSelectMaster" selectionChange="onRowSelection">
+                <columns>
+                        <Column >
+                           <Text text="{i18n>Carrid}"></Text>
+                        </Column>
+                        <Column >
+                            <Text text="{i18n>Connid}"></Text>
+                        </Column>
+                        <Column >
+                            <Text text="{i18n>Fldate}"></Text>
+                        </Column>
+                        <Column >
+                            <Text text="{i18n>Bookid}"></Text>
+                        </Column>
+                        <Column >
+                        <Text text="{i18n>OrderDate}"></Text>
+                        </Column>
+                        <Column >
+                        <Text text="{i18n>Action}"></Text>
+                        </Column>
+                </columns>
+
+
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{FlightModel>Carrid}"></Text>
+                        <Text text="{FlightModel>Connid}"></Text>
+                        <Text text="{FlightModel>Fldate}"></Text>
+                        <Text text="{FlightModel>Bookid}"></Text>
+                        <Text text="{FlightModel>OrderDate}"></Text>
+                        <Button icon="sap-icon://delete" press="onDelete"></Button>
+                    </cells>
+                </ColumnListItem>
+            </Table>
+            
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer/>
+                    <Button text="{i18n>Create}" press="onCreate" width="250px"></Button>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

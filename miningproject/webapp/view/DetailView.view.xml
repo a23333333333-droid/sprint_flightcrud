@@ -1,0 +1,30 @@
+<mvc:View controllerName="app.miningproject.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+ 
+    <Page title="Detail View" showNavButton="true" navButtonPress="onListView">
+        <content>
+            <f:SimpleForm>
+                <Label text="Location Description"></Label>
+                <Text text="{MiningModel>Location Description}"></Text>
+                <Label text="Resource Allocated"></Label>
+                <Text text="{MiningModel>Mining Resource allocated}"></Text>
+                <Label text="Total Cost"></Label>
+                <Text text="{MiningModel>Total cost}"></Text>
+                <Label text="Currency"></Label>
+                <Text text="{MiningModel>Currency}"></Text>
+                <Label text="Possible Mineral Report"></Label>
+                <Text text="{MiningModel>Report of possible mineral from the location}"></Text>
+                <Label text="Number of Drills"></Label>
+                <Text text="{MiningModel>Number of drills performed}"></Text>
+                <Label text="Type of Mineral"></Label>
+                <Text text="{MiningModel>Type of mineral}"></Text>
+                <Label text="Man Days"></Label>
+                <Text text="{MiningModel>Man days}"></Text>
+                <Label text="Probability of Positive Outcome"></Label>
+                <Text text="{MiningModel>Probability of positive outcome}"></Text>
+            </f:SimpleForm>
+        </content>    
+    </Page>
+</mvc:View>

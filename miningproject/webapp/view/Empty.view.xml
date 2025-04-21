@@ -1,0 +1,12 @@
+<mvc:View controllerName="app.miningproject.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <!-- <SplitApp id="emptyapp">
+    </SplitApp> -->
+    <Page title="Empty View">
+        <content>
+
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,24 @@
+<mvc:View controllerName="app.flightdetailssprint.controller.UpdateView"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="idUpdatePage" title="{i18n>titleUpdate}">
+           <content>
+           <f:SimpleForm editable="true">
+           <Label text="Airline Number"></Label>
+           <Input value="{FlightModel>Carrid}" id="idCarridUpdate" enabled="false"></Input>
+           <Label text="Connection ID"></Label>
+           <Input value="{FlightModel>Connid}" id="idConnidUpdate" enabled="false"></Input>
+           <Label text="Flight Date"></Label>
+           <Input value="{FlightModel>Fldate}" id="idFldateUpdate" placeholder="yyyy-MM-dd" enabled="false"></Input>
+           <Label text="Booking ID"></Label>
+           <Input value="{FlightModel>Bookid}" id="idBookidUpdate" enabled="false"></Input>
+           <Label text="Order Date" ></Label>
+           <Input value="{FlightModel>OrderDate}" id="idOrderdateUpdate" placeholder="yyyy-MM-dd"></Input>
+           <Button text="{i18n>Update}" press="onUpdate"></Button>           
+           
+           
+           </f:SimpleForm>
+             </content>
+    </Page>
+</mvc:View>

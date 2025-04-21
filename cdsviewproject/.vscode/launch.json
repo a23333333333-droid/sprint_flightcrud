@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Start project1",
+      "name": "Start cdsviewproject",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/project1",
+      "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npx",
       "windows": {
         "runtimeExecutable": "npx.cmd"
@@ -16,7 +16,7 @@
       ],
       "args": [
         "--open",
-        "test/flpSandbox.html#appproject1-display"
+        "test/flpSandbox.html#appcdsviewproject-tile"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
@@ -24,14 +24,14 @@
       "env": {
         "DEBUG": "--inspect",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/project1\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ui5_Arun/cdsviewproject\"}"
       }
     },
     {
-      "name": "Start project1 Mock",
+      "name": "Start cdsviewproject Mock",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/project1",
+      "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npx",
       "windows": {
         "runtimeExecutable": "npx.cmd"
@@ -44,21 +44,21 @@
         "--config",
         "./ui5-mock.yaml",
         "--open",
-        "test/flpSandbox.html#appproject1-display"
+        "test/flpSandbox.html#appcdsviewproject-tile"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/project1\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ui5_Arun/cdsviewproject\"}"
       }
     },
     {
-      "name": "Start project1 Local",
+      "name": "Start cdsviewproject Local",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/project1",
+      "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npx",
       "windows": {
         "runtimeExecutable": "npx.cmd"
@@ -71,14 +71,14 @@
         "--config",
         "./ui5-local.yaml",
         "--open",
-        "test/flpSandbox.html#appproject1-display"
+        "test/flpSandbox.html#appcdsviewproject-tile"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/project1\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/ui5_Arun/cdsviewproject\"}"
       }
     }
   ]

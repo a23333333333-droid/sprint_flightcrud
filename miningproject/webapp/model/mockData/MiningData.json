@@ -1,0 +1,124 @@
+{
+    "MiningDataSet": [
+        {
+            "Location ID": "LOC001",
+            "Location Description": "North Ridge",
+            "Mining Resource allocated": "Resource A",
+            "Total cost": "150000",
+            "Report of possible mineral from the location": "Gold",
+            "Number of drills performed": "5 drills",
+            "Type of mineral": "Gold",
+            "Man days": "30 days",
+            "Probability of positive outcome": "High",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC002",
+            "Location Description": "East Valley",
+            "Mining Resource allocated": "Resource B",
+            "Total cost": "200000",
+            "Report of possible mineral from the location": "Silver",
+            "Number of drills performed": "3 drills",
+            "Type of mineral": "Silver",
+            "Man days": "25 days",
+            "Probability of positive outcome": "Medium",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC003",
+            "Location Description": "West Hill",
+            "Mining Resource allocated": "Resource C",
+            "Total cost": "180000",
+            "Report of possible mineral from the location": "Copper",
+            "Number of drills performed": "4 drills",
+            "Type of mineral": "Copper",
+            "Man days": "28 days",
+            "Probability of positive outcome": "High",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC004",
+            "Location Description": "South Plains",
+            "Mining Resource allocated": "Resource D",
+            "Total cost": "220000",
+            "Report of possible mineral from the location": "Iron",
+            "Number of drills performed": "6 drills",
+            "Type of mineral": "Iron",
+            "Man days": "35 days",
+            "Probability of positive outcome": "High",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC005",
+            "Location Description": "Central Peak",
+            "Mining Resource allocated": "Resource E",
+            "Total cost": "170000",
+            "Report of possible mineral from the location": "Coal",
+            "Number of drills performed": "2 drills",
+            "Type of mineral": "Coal",
+            "Man days": "20 days",
+            "Probability of positive outcome": "Low",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC006",
+            "Location Description": "North Valley",
+            "Mining Resource allocated": "Resource F",
+            "Total cost": "190000 INR",
+            "Report of possible mineral from the location": "Uranium",
+            "Number of drills performed": "7 drills",
+            "Type of mineral": "Uranium",
+            "Man days": "40 days",
+            "Probability of positive outcome": "Medium",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC007",
+            "Location Description": "East Ridge",
+            "Mining Resource allocated": "Resource G",
+            "Total cost": "160000 INR",
+            "Report of possible mineral from the location": "Unknown",
+            "Number of drills performed": "4 drills",
+            "Type of mineral": "Unknown",
+            "Man days": "22 days",
+            "Probability of positive outcome": "Unknown",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC008",
+            "Location Description": "South Valley",
+            "Mining Resource allocated": "Resource H",
+            "Total cost": "210000 INR",
+            "Report of possible mineral from the location": "Platinum",
+            "Number of drills performed": "5 drills",
+            "Type of mineral": "Platinum",
+            "Man days": "30 days",
+            "Probability of positive outcome": "High",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC009",
+            "Location Description": "West Ridge",
+            "Mining Resource allocated": "Resource I",
+            "Total cost": "230000 INR",
+            "Report of possible mineral from the location": "Diamond",
+            "Number of drills performed": "6 drills",
+            "Type of mineral": "Diamond",
+            "Man days": "33 days",
+            "Probability of positive outcome": "High",
+            "Currency":"INR"
+        },
+        {
+            "Location ID": "LOC010",
+            "Location Description": "Central Valley",
+            "Mining Resource allocated": "Resource J",
+            "Total cost": "250000 INR",
+            "Report of possible mineral from the location": "Ruby",
+            "Number of drills performed": "7 drills",
+            "Type of mineral": "Ruby",
+            "Man days": "38 days",
+            "Probability of positive outcome": "Medium",
+            "Currency":"INR"
+        }
+    ]
+}
