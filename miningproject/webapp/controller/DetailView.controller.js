@@ -24,11 +24,11 @@ sap.ui.define([
             let sMineral=this.getView().byId("idMineral").getValue()
             // console.log(sName);
             let sLocation=this.getView().byId("idLocation").getValue()
-            if(sName){
+            if(sMineral){
                 let filterName=new Filter("Type of mineral", FilterOperator.Contains,sMineral)
                 aFilter.push(filterName)
             }
-            if(sResource){
+            if(sLocation){
                 let filterName=new Filter("Location ID", FilterOperator.Contains,sLocation)
                 aFilter.push(filterName)
             }
