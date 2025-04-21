@@ -25,6 +25,60 @@
                 <Label text="Probability of Positive Outcome"></Label>
                 <Text text="{MiningModel>Probability of positive outcome}"></Text>
             </f:SimpleForm>
+            <IconTabBar>
+             <items>
+            <IconTabFilter icon="sap-icon://information">
+            <VBox >
+            <HBox editable="true">
+            <Label text="Location Description"></Label>
+            <Text text="{MiningModel>Location Description}"></Text>
+            </HBox>
+            <HBox>
+            <Label text="Resource Allocated"></Label>
+            <Text text="{MiningModel>Mining Resource allocated}"></Text>
+            </HBox>
+            <HBox>
+            <Label text="Total Cost"></Label>
+            <Text text="{MiningModel>Total cost}"></Text>
+            </HBox>
+            </VBox>
+            </IconTabFilter>
+            <IconTabFilter icon="sap-icon://Mineral">
+                      <Label text="Mineral"></Label>
+                      <Input id="idMineral" width="200px" liveChange="onFilter"></Input>
+                      <Label text="Location"></Label>
+                      <Input id="idLocation" width="200px" liveChange="onFilter"></Input>
+            <Table items="{MiningModel>/MiningDataSet}" id="idMTable">
+    <columns>
+        <Column>
+            <Text text="Type of mineral"></Text>
+        </Column>
+        <Column>
+            <Text text="Location ID"></Text>
+        </Column>
+        <Column>
+            <Text text="Total Cost"></Text>
+        </Column>
+        <Column>
+            <Text text="Location Description"></Text>
+        </Column>
+    </columns>
+
+    <ColumnListItem>
+        <cells>
+            <Text text="{MiningModel>Type of mineral}"></Text>
+            <Input value="{MiningModel>Location ID}"
+                   showValueHelp="true"
+                   valueHelpRequest="onF4Help"></Input>
+            <Text text="{MiningModel>Total cost}"></Text>
+            <Text text="{MiningModel>Location Description}"></Text>
+        </cells>
+    </ColumnListItem>
+</Table>
+    </IconTabFilter>
+             </items>
+
+            </IconTabBar>
         </content>    
     </Page>
 </mvc:View>

@@ -102,6 +102,10 @@
           "target": [
             "TargetDetail"
           ]
+        },{
+           "name":"RouteForm",
+          "pattern": "Form",
+            "target": ["TargetForm"]
         }
       ],
       "targets": {
@@ -123,8 +127,14 @@
             "name": "Empty",
             "controlAggregation": "detailPages",
             "viewLevel":1
-          }
+          },
+          "TargetForm":{
+          "id": "idForm",
+          "name": "FormView",
+          "controlAggregation": "detailPages",
+          "view level":1
       }
+    }
     },
     "rootView": {
       "viewName": "app.miningproject.view.App",

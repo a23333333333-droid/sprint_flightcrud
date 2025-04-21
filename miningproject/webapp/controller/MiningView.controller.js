@@ -1,17 +1,17 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
+    "./BaseController",
     "sap/ui/model/json/JSONModel",
     "sap/ui/model/Sorter",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator"
-], (Controller, JSONModel, Sorter, Filter, FilterOperator) => {
+], (BaseController, JSONModel, Sorter, Filter, FilterOperator) => {
     "use strict";
 
-    return Controller.extend("app.miningproject.controller.MiningView", {
+    return BaseController.extend("app.miningproject.controller.MiningView", {
         onInit() {
-            var oModel = new JSONModel();
-            oModel.loadData("/model/mockData/MiningData.json");
-            this.getView().setModel(oModel, "MiningModel");
+            // var oModel = new JSONModel();
+            // oModel.loadData("/model/mockData/MiningData.json");
+            // this.getView().setModel(oModel, "MiningModel");
         },
         onDetailView: function () {
             // Get the router object
@@ -19,7 +19,13 @@ sap.ui.define([
             // Use the navigation method
             oRouter.navTo("RouteDetail");
         },
-        onSort: function () {
+        onFormView:function(){
+            // get the router object
+            let oRouter=this.getOwnerComponent().getRouter()
+            // use the navigation method
+            oRouter.navTo("RouteForm")
+        },
+        onSort: function(){
             if (!this.bDescending) {
                 this.bDescending = false;
             }
