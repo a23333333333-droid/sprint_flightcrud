@@ -50,10 +50,10 @@ sap.ui.define([
             let key = param.LocationId; // Assuming the key field is LocationID
         
             let oModel = this.getOwnerComponent().getModel();
-            let entity = "/MINING_ODATASet(LocationId='" + key + "')"; // Adjust the entity set name if needed
+            let entity = "/MINING_ODATASet(LocationId='"+key+"')"; // Adjust the entity set name if needed
         
-            oModel.remove(entity, {
-                success: (resp) => {
+            oModel.remove(entity,{
+                success: (resp)=>{
                     MessageBox.success("Record Deleted", {
                         onClose: function() {
                             this._getData();
@@ -61,7 +61,7 @@ sap.ui.define([
                     })
                 },
                 error: (err) => {
-                    MessageBox.error("Deletion Failed");
+                    MessageBox.error("Deletion Failed")
                 }
             })
         },

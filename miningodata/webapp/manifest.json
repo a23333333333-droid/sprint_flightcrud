@@ -80,6 +80,9 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "MiningModel":{
+        "type":"sap.ui.model.json.JSONModel"
       }
     },
     "resources": {
@@ -108,13 +111,46 @@
           "target": [
             "TargetMiningView"
           ]
+        },
+        {
+          "name": "RouteCreateView",
+          "pattern": "create",
+          "target": [
+            "TargetCreateView"
+          ]
+        },
+        {
+          "name": "RouteDetailView",
+          "pattern": "detail/{indexDetail}",
+          "target": [
+            "TargetDetailView"
+          ]
+        },
+        {
+          "name": "RouteUpdateView",
+          "pattern": "update/{indexUpdate}",
+          "target": [
+            "TargetUpdateView"
+          ]
         }
       ],
       "targets": {
         "TargetMiningView": {
           "id": "MiningView",
           "name": "MiningView"
-        }
+        },
+        "TargetCreateView":{
+        "viewId": "idCreateView",
+        "viewName": "CreateView"
+      },
+      "TargetDetailView":{
+        "viewId": "idDetailView",
+        "viewName": "DetailView"
+      },
+      "TargetUpdateView":{
+        "viewId": "idUpdateView",
+        "viewName": "UpdateView"
+      }
       }
     },
     "rootView": {

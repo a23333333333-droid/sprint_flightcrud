@@ -19,9 +19,7 @@
                 <Property Name="Currency" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="CU" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
             </EntityType>
             <EntityContainer Name="ZARUN_MINING_ODATA_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
-                <EntitySet Name="_getData:function(){
-            let oModel=this.getModel()
-            let entity="/SPRINT_MAINSet"" EntityType="ZARUN_MINING_ODATA_SRV.MINING_ODATA" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="MINING_ODATASet" EntityType="ZARUN_MINING_ODATA_SRV.MINING_ODATA" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
             </EntityContainer>
             <atom:link rel="self" href="http://zin-blr-srv1:8001/sap/opu/odata/sap/ZARUN_MINING_ODATA_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
             <atom:link rel="latest-version" href="http://zin-blr-srv1:8001/sap/opu/odata/sap/ZARUN_MINING_ODATA_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>

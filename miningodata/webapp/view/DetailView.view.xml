@@ -1,0 +1,34 @@
+<mvc:View controllerName="app.miningodata.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="idDetailPage" title="{i18n>titleDetail}">
+    <content>
+           <f:SimpleForm editable="true">
+           <Label text="Location Id"></Label>
+           <Text text="{MiningModel>LocationId}"></Text>
+           <Label text="Location Description"></Label>
+           <Text text="{MiningModel>LocationDescription}"></Text>
+           <Label text="Mining Resource Allocated"></Label>
+           <Text text="{MiningModel>MiningResourceAllocated}"></Text>
+           <Label text="Total Cost"></Label>
+           <Text text="{MiningModel>TotalCost}"></Text>
+           <Label text="Possible Mineral From Location" ></Label>
+           <Text text="{MiningModel>PossibleMineralFromLocation}"></Text>
+           <Label text="Number Of Drills Performed" ></Label>
+           <Text text="{MiningModel>NumberOfDrillsPerformed}"></Text>
+           <Label text="Type Of Mineral" ></Label>
+           <Text text="{MiningModel>TypeOfMineral}"></Text>
+           <Label text="Man Days" ></Label>
+           <Text text="{MiningModel>ManDays}"></Text>
+           <Label text="Probability Of Outcome" ></Label>
+           <Text text="{MiningModel>ProbabilityOfOutcome}"></Text>
+           <Label text="Currency" ></Label>
+           <Text text="{MiningModel>Currency}"></Text>
+           <Button text="{i18n>Edit}" press="onEdit"></Button>           
+           
+           
+           </f:SimpleForm>
+             </content>
+    </Page>
+</mvc:View>

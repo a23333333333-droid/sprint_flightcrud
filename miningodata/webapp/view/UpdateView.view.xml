@@ -1,0 +1,32 @@
+<mvc:View controllerName="app.miningodata.controller.UpdateView"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="idUpdatePage" title="{i18n>titleUpdate}">
+    <content>
+           <f:SimpleForm editable="true">
+           <Label text="Location Id"></Label>
+           <Input value="{MiningModel>LocationId}" id="idLocationIdUpdate" enabled="false"></Input>
+           <Label text="Location Description"></Label>
+           <Input value="{MiningModel>LocationDescription}" id="idLocationDescriptionUpdate" enabled="true"></Input>
+           <Label text="Mining Resource Allocated"></Label>
+           <Input value="{MiningModel>MiningResourceAllocated}" id="idMiningResourceAllocatedUpdate" enabled="true"></Input>
+           <Label text="Total Cost"></Label>
+           <Input value="{MiningModel>TotalCost}" id="idTotalCostUpdate" enabled="true"></Input>
+           <Label text="Possible Mineral From Location" ></Label>
+           <Input value="{MiningModel>PossibleMineralFromLocation}" id="idPossibleMineralFromLocationUpdate" enabled="true"></Input>
+           <Label text="Number Of Drills Performed" ></Label>
+           <Input value="{MiningModel>NumberOfDrillsPerformed}" id="idNumberOfDrillsPerformedUpdate" enabled="true"></Input>
+           <Label text="Type Of Mineral" ></Label>
+           <Input value="{MiningModel>TypeOfMineral}" id="idTypeOfMineralUpdate" enabled="true"></Input>
+           <Label text="Man Days" ></Label>
+           <Input value="{MiningModel>ManDays}" id="idManDaysUpdate" enabled="true"></Input>
+           <Label text="Probability Of Outcome" ></Label>
+           <Input value="{MiningModel>ProbabilityOfOutcome}" id="idProbabilityOfOutcomeUpdate" enabled="true"></Input>
+           <Label text="Currency"></Label>
+           <Input value="{MiningModel>Currency}" id="idCurrencyUpdate" enabled="true"></Input>
+           <Button text="{i18n>Update}" press="onUpdate"></Button>         
+           </f:SimpleForm>
+             </content>
+    </Page>
+</mvc:View>

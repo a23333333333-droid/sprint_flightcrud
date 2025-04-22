@@ -1,0 +1,34 @@
+<mvc:View controllerName="app.miningodata.controller.CreateView"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="idCreatePage" title="{i18n>titleCreate}">
+    <content>
+           <f:SimpleForm editable="true">
+           <Label text="Location Id"></Label>
+           <Input id="idLocationId"></Input>
+           <Label text="Location Description"></Label>
+           <Input id="idLocationDescription"></Input>
+           <Label text="Mining Resource Allocated"></Label>
+           <Input id="idMiningResourceAllocated"></Input>
+           <Label text="Total Cost"></Label>
+           <Input id="idTotalCost"></Input>
+           <Label text="Possible Mineral From Location" ></Label>
+           <Input id="idPossibleMineralFromLocation"></Input>
+           <Label text="Number Of Drills Performed" ></Label>
+           <Input id="idNumberOfDrillsPerformed"></Input>
+           <Label text="Type Of Mineral" ></Label>
+           <Input id="idTypeOfMineral"></Input>
+           <Label text="Man Days" ></Label>
+           <Input id="idManDays"></Input>
+           <Label text="Probability Of Outcome" ></Label>
+           <Input id="idProbabilityOfOutcome"></Input>
+           <Label text="Currency" ></Label>
+           <Input id="idCurrency"></Input>
+           <Button text="{i18n>Create}" press="onCreate"></Button>           
+           
+           
+           </f:SimpleForm>
+             </content>
+    </Page>
+</mvc:View>
