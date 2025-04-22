@@ -3,7 +3,6 @@
     xmlns="sap.m">
     <Page title="Mining View">
         <headerContent>
-            <Button icon="sap-icon://action" tooltip="Share" press="onDetailView"/>
             <Button icon="sap-icon://sort" press="onSort"/>
         </headerContent>
         <subHeader>
@@ -26,14 +25,6 @@
                 </items>
             </List>
         </content>
-        <footer>
-            <OverflowToolbar>
-                <ToolbarSpacer/>
-                <Button text="Accept" type="Accept"/>
-                <Button text="Reject" type="Reject"/>
-                <Button text="Edit"/>
-                <Button text="Create" press="onFormView"/>
-            </OverflowToolbar>
-        </footer>
+        
     </Page>
 </mvc:View>

@@ -54,12 +54,13 @@ sap.ui.define([
                 MessageBox.success("record inserted",{
                     onClose:function(){
                         let oRouter=that.getOwnerComponent().getRouter()
+                        oRouter.navTo("RouteMiningView")
                         oCarrid.setValue("")
                         oConnid.setValue("")
                         oFldate.setValue("")
                         oBookid.setValue("")
                         oOrderdate.setValue("")
-                        oRouter.navTo("RouteMiningView")
+                        
                     }
                 })
             },
