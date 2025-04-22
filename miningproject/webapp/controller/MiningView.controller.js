@@ -19,12 +19,6 @@ sap.ui.define([
             // Use the navigation method
             oRouter.navTo("RouteDetail");
         },
-        onFormView:function(){
-            // get the router object
-            let oRouter=this.getOwnerComponent().getRouter()
-            // use the navigation method
-            oRouter.navTo("RouteForm")
-        },
         onSort: function(){
             if (!this.bDescending) {
                 this.bDescending = false;

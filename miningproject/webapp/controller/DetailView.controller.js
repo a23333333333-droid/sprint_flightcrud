@@ -47,6 +47,11 @@ sap.ui.define([
                 let oInput=sap.ui.getCore().byId(this.inputField)
                     oInput.setValue(sValue)
             },
+            onListView:function(){
+                    let oRouter=this.getOwnerComponent().getRouter()
+                    // use the navigation method
+                    oRouter.navTo("RouteMiningView")
+            },
             onF4Help:function(oEvent){
                 // let myInputField where the popup actually popped up
                 this.inputField=oEvent.getSource().getId()

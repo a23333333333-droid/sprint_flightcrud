@@ -43,7 +43,7 @@
             </HBox>
             </VBox>
             </IconTabFilter>
-            <IconTabFilter icon="sap-icon://Mineral">
+            <IconTabFilter icon="sap-icon://supplier">
                       <Label text="Mineral"></Label>
                       <Input id="idMineral" width="200px" liveChange="onFilter"></Input>
                       <Label text="Location"></Label>

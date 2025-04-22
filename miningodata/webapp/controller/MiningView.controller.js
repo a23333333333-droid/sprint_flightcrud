@@ -10,20 +10,7 @@ sap.ui.define([
         onInit:function(){
             this._getData()
         },
-        _getData:function(){
-            let oModel=this.getModel()
-            let entity="/MINING_ODATASet"
-
-            oModel.read(entity,{
-                success:(odata,resp)=>{
-                    let jModel=this.getOwnerComponent().getModel("MiningModel")
-                        jModel.setData(odata.results)
-                },
-                error:(error)=> {
-                    console.log(error)
-                }
-            })
-        },
+        
         onRowSelection:function(oEvent){
             let oItem=oEvent.getParameter("listItem")
             let oContext=oItem.getBindingContextPath("MiningModel")
