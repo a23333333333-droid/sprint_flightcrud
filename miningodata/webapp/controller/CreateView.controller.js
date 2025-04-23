@@ -53,15 +53,21 @@ sap.ui.define([
             success:function(){
                 MessageBox.success("record inserted",{
                     onClose:function(){
-                        let oRouter=that.getOwnerComponent().getRouter()
+                        let oRouter = that.getOwnerComponent().getRouter()
+                        oLocationId.setValue()
+                        oLocationDescription.setValue()
+                        oMiningResourceAllocated.setValue()
+                        oTotalCost.setValue()
+                        oPossibleMineralFromLocation.setValue()
+                        oNumberOfDrillsPerformed.setValue()
+                        oTypeOfMineral.setValue()
+                        oManDays.setValue()
+                        oProbabilityOfOutcome.setValue()
+                        oCurrency.setValue()
                         oRouter.navTo("RouteMiningView")
-                        oCarrid.setValue("")
-                        oConnid.setValue("")
-                        oFldate.setValue("")
-                        oBookid.setValue("")
-                        oOrderdate.setValue("")
+                        that._getData()
                         
-                    }
+                    }.bind(that)
                 })
             },
             error:function(error){
