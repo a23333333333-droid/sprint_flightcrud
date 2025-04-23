@@ -8,7 +8,7 @@
            <Label text="Location Id"></Label>
            <Input id="idLocationId"></Input>
            <Label text="Location Description"></Label>
-           <Input id="idLocationDescription"></Input>
+           <Input id="idLocationDescription" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
            <Label text="Mining Resource Allocated"></Label>
            <Input id="idMiningResourceAllocated"></Input>
            <Label text="Total Cost"></Label>
@@ -25,7 +25,9 @@
            <Input id="idProbabilityOfOutcome"></Input>
            <Label text="Currency" ></Label>
            <Input id="idCurrency"></Input>
-           <Button text="{i18n>Create}" press="onCreate"></Button>           
+           <Button text="{i18n>Create}" press="onCreate"></Button>
+           <Button text="{i18n>}" press="onCreate"></Button>
+                  
            
            
            </f:SimpleForm>

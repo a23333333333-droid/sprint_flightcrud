@@ -5,13 +5,13 @@ sap.ui.define([
 
     return Controller.extend("app.mining.controller.BaseController", {
         onInit:function(){
-
+            this._getData()
         },
         getRouter:function(){
             return this.getOwnerComponent().getRouter()
         },
-        getModel:function(){
-            return this.getOwnerComponent().getModel()
+        getModel:function(m){
+            return this.getOwnerComponent().getModel(m)
         },
 
         _getData:function(){
