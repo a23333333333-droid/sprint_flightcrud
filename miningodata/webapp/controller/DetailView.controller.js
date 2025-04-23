@@ -1,10 +1,7 @@
 sap.ui.define([
     "./BaseController",
-    "sap/ui/model/Filter",
-    "sap/ui/model/FilterOperator",
-    "sap/m/MessageBox"
 
-],function(BaseController,Filter,FilterOperator,MessageBox){
+],function(BaseController){
     "use strict";
 
     return BaseController.extend("app.miningodata.controller.DetailView", {

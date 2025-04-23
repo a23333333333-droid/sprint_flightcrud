@@ -27,6 +27,6 @@ sap.ui.define([
                     console.log(error)
                 }
             })
-        },
+        }
     });
 });
